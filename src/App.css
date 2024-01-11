@@ -1,42 +1,83 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  /* background-color: rgb(50, 128, 196); */
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu-underline {
+  width: 100px;
+  height: 5px;
+  background-color: red;
+  margin-bottom: 10px;
+}
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.Menu {
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+/* Your existing styles for .btn */
+.btn {
+  padding: 5px;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  background-color: rgb(223, 204, 38);
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+.menu-section-container {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.item {
+  background-color: rgb(201, 209, 217);
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.item-image {
+  width: 400px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-name {
+  margin: 0;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  padding-left: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.item-des {
+  margin: 5px 0;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  padding-left: 5px;
+  font-weight: 400;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.item-price {
+  margin: 0;
+  letter-spacing: 1px;
+  color: red;
+  font-weight: bolder;
+  padding-left: 5px;
+  padding-bottom: 5px;
 }
