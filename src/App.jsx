@@ -9,11 +9,12 @@ function App() {
   const filterItems = (category) => {
     if (category === 'All') {
       setMenuItems(items)
+    } else {
+      const newItems = items.filter((item) => {
+        return item.category === category
+      })
+      setMenuItems(newItems)
     }
-    const newItems = items.filter((item) => { 
-      item.category === category
-    })
-    setMenuItems(newItems)
   }
   return (
     <main>
