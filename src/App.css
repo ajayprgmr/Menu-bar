@@ -10,8 +10,15 @@ main {
   align-items: center;
   flex-direction: column;
 }
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .menu-underline {
-  width: 100px;
+  margin-top: -20px;
+  width: 80%;
   height: 5px;
   background-color: red;
   margin-bottom: 10px;
@@ -27,15 +34,31 @@ main {
   letter-spacing: 2px;
   font-size: 3rem;
 }
-/* Your existing styles for .btn */
 .btn {
+  margin-right: 10px;
+  text-transform: capitalize;
   padding: 5px;
   font-size: 1.5rem;
-  margin-right: 10px;
-  background-color: rgb(223, 204, 38);
-  border-radius: 10px;
-  text-transform: capitalize;
+  border-radius: 5px;
+  width: 120px;
 }
+.btn:hover{
+  background-color: green;
+  color:white;
+}
+.btn-active {
+  margin-right: 10px;
+  text-transform: capitalize;
+  padding: 5px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color:red;
+  color:white;
+  width: 120px;
+
+}
+
 .menu-section-container {
   width: 90vw;
   display: flex;

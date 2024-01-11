@@ -6,7 +6,7 @@ import Menu from './Menu.jsx'
 import { useState } from 'react'
 function App() {
   const [menuItems, setMenuItems] = useState(items)
-  const filterItems = (category) => {
+  const filterItems = (category, setActiveBtn) => {
     if (category === 'All') {
       setMenuItems(items)
     } else {
@@ -15,6 +15,7 @@ function App() {
       })
       setMenuItems(newItems)
     }
+    setActiveBtn(true)
   }
   return (
     <main>
